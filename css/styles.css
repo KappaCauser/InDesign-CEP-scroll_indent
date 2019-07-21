@@ -1,0 +1,62 @@
+ body {
+    font-size: 10px;
+    background-color: rgb(240, 240, 240);
+    color: rgb(75, 75, 75);
+    /* スクロール禁止 */
+    overflow: hidden;
+    /* センター揃え用の設定 */
+    text-align: center;
+    /* 行間 */
+    line-height: 1.5;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.inner{
+    /* センター揃え用の設定 */
+    display: inline-block;
+    text-align: left;
+}
+
+/* スクロールバーなし */
+body::-webkit-scrollbar{
+    display:none;
+}
+
+/* 「字上げ」「字下げ」「問答」のinput Number */
+input[ class = "numberView_1" ]{
+    width: 50px;
+}
+/* 「ステップ値設定」のinput Number */
+input[ class = "numberView_2" ]{
+    width: 37px;
+}
+
+/* radioボタン */
+/* radioボタンの配置 */
+fieldset {
+    display: inline;   
+}
+/* radioボタンの設定 */
+.radio-inline__input {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+/* radioボタンのデフォルト */
+.radio-inline__label {
+    text-align: center;
+    width: 35px;
+    background: rgb(230, 230, 230);
+    display: inline-block;
+    padding: 2px 2px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+    border-radius: 0.5px;
+    transition: all .2s;
+}
+/* radioボタンのプレス */
+.radio-inline__input:checked + .radio-inline__label {
+    background: rgb(150, 150, 150);
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0,0,0,.7);
+}
+

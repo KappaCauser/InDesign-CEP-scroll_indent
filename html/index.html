@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="inner">
+      <!-- 「単位設定」 -->
+      <fieldset>
+          <legend>単位</legend>
+          <input id="item-1" class="radio-inline__input" type="radio" name="EvlSc_tani" value="chara" onclick="radioOnClickFnc()" checked="checked"/>
+          <label class="radio-inline__label" for="item-1">文字数</label>
+          <input id="item-2" class="radio-inline__input" type="radio" name="EvlSc_tani" value="MILLIMETERS" onclick="radioOnClickFnc()"/>
+          <label class="radio-inline__label" for="item-2">mm</label>
+          <br/>
+          <input id="item-3" class="radio-inline__input" type="radio" name="EvlSc_tani" value="POINTS" onclick="radioOnClickFnc()"/>
+          <label class="radio-inline__label" for="item-3">pt</label>
+          <input id="item-4" class="radio-inline__input" type="radio" name="EvlSc_tani" value="Q" onclick="radioOnClickFnc()"/>
+          <label class="radio-inline__label" for="item-4">級</label>
+      </fieldset>
+      <br/>
+      <br/>
+      <table>
+        <!-- 「字上げ」 -->
+        <tr>
+          <td align="right">字上げ：</td>
+          <td><input type="number" class="numberView_1" name="EvlSc_jiage" id="EvlSc_jiage" ></td>
+        </tr>
+        <!-- 「字下げ」 -->
+        <tr>
+          <td align="right">字下げ：</td>
+          <td><input type="number" class="numberView_1" name="EvlSc_jisage" id="EvlSc_jisage" ></td>
+        </tr>
+        <!-- 「問答」 -->
+        <tr>
+          <td align="right">問答　：</td>
+          <td><input type="number" class="numberView_1" name="EvlSc_mondou" id="EvlSc_mondou" ></td>
+        </tr>
+      </table>
+      <br/>
+      <hr>
+      <br/>
+      <fieldset>
+        <legend>ステップ値設定</legend>
+            <table>
+              <tr>
+                <td align="right">文字数：</td>
+                <td><input type="number" class="numberView_2" name="step_moji" id="step_moji" value="1" min="0" ></td>
+              </tr>
+              <tr>
+                <td align="right">mm：</td>
+                <td><input type="number" class="numberView_2" name="step_mm" id="step_mm" value="0.25" min="0" ></td>
+              </tr>
+              <tr>
+                <td align="right">pt：</td>
+                <td><input type="number" class="numberView_2" name="step_pt" id="step_pt" value="1" min="0" ></td>
+              </tr>
+              <tr>
+                <td align="right">級：</td>
+                <td><input type="number" class="numberView_2" name="step_Q" id="step_Q" value="1" min="0" ></td>
+              </tr>
+            </table>        
+      </fieldset>
+    </div>
+  </body>
+  <link id="ccstyleTheme" href="../css/styles.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../js/jquery.js"></script>
+  <script type="text/javascript" src="../js/CSInterface.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>
+</html>
